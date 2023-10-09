@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    color: #000;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+#instructions {
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 600px
+}
+
+h1 {
+    text-align: center
+}
+
+#start {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: purple;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+#view-highscores {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid purple;
+    color: purple;
+    background-color: transparent;
+    padding: 8px 16px;
+    font-size: 20px;
+    cursor: pointer
+}
+
+#timer {
+    position: absolute;
+    top: auto;
+    right: 5px;
+    font-size: 20px;
+    text-align: right
+}
+
+#start-timer,
+#quiz-timer {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 20px;
+    text-align: right
+}
+
+#question {
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: purple;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+#choices button {
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: purple;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+#submit-score {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: purple;
+    color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.feedback {
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    color: gray;
+    text-align: left;
+}
+
+.feedback::before {
+    content: "";
+}
+
+.feedback.correct::after,
+.feedback.wrong::after {
+    display: none;
+}
+
+.correct-feedback,
+.wrong-feedback {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.correct-feedback::before,
+.wrong-feedback::before {
+    content: attr(data-feedback);
+    position: relative;
+    top: 0;
+    left: 0;
+    color: gray;
+    font-size: 20px;
+    text-align: left;
+}
+
+#highscore-form,
+#highscore-list {
+    text-align: center
+}
+
+#initials {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 20px
+}
+
+#highscore-list div {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
