@@ -12,4 +12,6 @@ Click on deployed page and take the JS test
 
 This project is licensed under the MIT License.
 
-## Deployement
+## Deployment
+
+##Screenshots
