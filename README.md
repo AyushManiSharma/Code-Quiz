@@ -13,6 +13,7 @@ Click on deployed page and take the JS test
 This project is licensed under the MIT License.
 
 ## Deployment
+https://ayushmanisharma.github.io/Code-Quiz/
 
 ## Screenshots
 
