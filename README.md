@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a Javascript Quiz and recor highscores
+Create a Javascript Quiz taht records highscores
 
 ## Usage
 
