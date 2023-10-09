@@ -90,6 +90,7 @@ h1 {
     align-items: center
 }
 
+
 .button {
     display: block;
     margin: 20px auto;
@@ -114,6 +115,10 @@ h1 {
     cursor: pointer
 }
 
+#choices button:hover{
+    background-color: lightblue;
+}
+
 #submit-score {
     display: block;
     margin: 20px auto;
@@ -131,33 +136,6 @@ h1 {
     margin-bottom: 10px;
     position: relative;
     color: gray;
-    text-align: left;
-}
-
-.feedback::before {
-    content: "";
-}
-
-.feedback.correct::after,
-.feedback.wrong::after {
-    display: none;
-}
-
-.correct-feedback,
-.wrong-feedback {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.correct-feedback::before,
-.wrong-feedback::before {
-    content: attr(data-feedback);
-    position: relative;
-    top: 0;
-    left: 0;
-    color: gray;
-    font-size: 20px;
     text-align: left;
 }
 
