@@ -139,6 +139,33 @@ h1 {
     text-align: left;
 }
 
+.feedback::before {
+    content: "";
+}
+
+.feedback.correct::after,
+.feedback.wrong::after {
+    display: none;
+}
+
+.correct-feedback,
+.wrong-feedback {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.correct-feedback::before,
+.wrong-feedback::before {
+    content: attr(data-feedback);
+    position: relative;
+    top: 0;
+    left: 0;
+    color: gray;
+    font-size: 20px;
+    text-align: left;
+}
+
 #highscore-form,
 #highscore-list {
     text-align: center
