@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: #000;
-}
+} */
 
 .container {
     max-width: 600px;
